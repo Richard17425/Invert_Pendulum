@@ -8,6 +8,8 @@ For a driver with mass m, height 2L (effective moment of inertia I = mL^2/3), as
 ![](images/2.png)
 
 ## [System Modeling](Invert_Pendulum.slx)
+建模的计算过程参考了: [一阶倒立摆建模与控制系统设计](https://blog.csdn.net/qq_42731705/article/details/122464642)
+
 ![](images/3.png)
 
 <!-- ### Transfer Function
@@ -16,7 +18,7 @@ For a driver with mass m, height 2L (effective moment of inertia I = mL^2/3), as
 ![](images/StateSpace.png)
 ![](images/StateSpaceConstant.png) -->
 ## Controller Design
-由于通过Transfer Function和State Space得到的系统特性有一点区别，所以PID参数会不一样(我也不知道为什么)。总之为了方便起见，我还是设置了两个PID控制器分别对两者进行控制。
+由于通过Transfer Function和State Space得到的系统特性有一点区别，所以PID参数会不一样(我也不知道为什么)。总之为了方便起见，我还是设置了两个PID控制器分别对两者进行控制。  
 ![](images/PID.png)
 
 <!-- 参数调整大致如下： 
